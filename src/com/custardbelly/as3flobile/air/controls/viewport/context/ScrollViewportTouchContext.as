@@ -24,10 +24,10 @@
  * <p>Licensed under The MIT License</p>
  * <p>Redistributions of files must retain the above copyright notice.</p>
  */
-package com.custardbelly.as3flobile.air.view.viewport.context
+package com.custardbelly.as3flobile.air.controls.viewport.context
 {
-	import com.custardbelly.as3flobile.view.viewport.context.AbstractScrollViewportContext;
-	import com.custardbelly.as3flobile.view.viewport.context.IScrollViewportStrategy;
+	import com.custardbelly.as3flobile.controls.viewport.context.AbstractScrollViewportContext;
+	import com.custardbelly.as3flobile.controls.viewport.context.IScrollViewportStrategy;
 	
 	import flash.display.InteractiveObject;
 	import flash.events.TouchEvent;

@@ -20,12 +20,12 @@
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/helper</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/model</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/util</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view/list</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view/list/layout</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view/list/renderer</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view/viewport</path-element>
-    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/view/viewport/context</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/layout</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/renderer</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport/context</path-element>
     </include-sources>
   	
   	<output>${lib.bin.dir}/${lib.name}.swc</output>
