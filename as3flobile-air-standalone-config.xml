@@ -24,6 +24,7 @@
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/layout</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/renderer</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/text</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport/context</path-element>
     </include-sources>

@@ -26,7 +26,7 @@
  */
 package com.custardbelly.as3flobile.air.controls.viewport.context
 {
-	import com.custardbelly.as3flobile.controls.viewport.context.AbstractScrollViewportContext;
+	import com.custardbelly.as3flobile.controls.viewport.context.BaseScrollViewportContext;
 	import com.custardbelly.as3flobile.controls.viewport.context.IScrollViewportStrategy;
 	
 	import flash.display.InteractiveObject;
@@ -38,7 +38,7 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 	 * @author toddanderson
 	 * 
 	 */
-	public class ScrollViewportTouchContext extends AbstractScrollViewportContext
+	public class ScrollViewportTouchContext extends BaseScrollViewportContext
 	{
 		protected var _touchTarget:InteractiveObject;
 		
