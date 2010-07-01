@@ -17,6 +17,7 @@
   	<include-sources includes="**/*">
     	<path-element>${src.dir}</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/debug</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/helper</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/model</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/util</path-element>
@@ -25,6 +26,8 @@
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/layout</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/renderer</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/text</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/toggle</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/toggle/context</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/viewport/context</path-element>
     </include-sources>

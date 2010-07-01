@@ -32,6 +32,7 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 	import flash.display.InteractiveObject;
 	import flash.events.TouchEvent;
 	import flash.geom.Point;
+	import flash.utils.getTimer;
 
 	/**
 	 * ScrollViewportTouchContext is a context for scrolling strategy that bases its mediated user interaction for a scroll event using touch. 
@@ -40,7 +41,11 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 	 */
 	public class ScrollViewportTouchContext extends BaseScrollViewportContext
 	{
+		protected var _point:Point;
 		protected var _touchTarget:InteractiveObject;
+		
+		protected var _startTime:int;
+		protected var _tapThreshold:int = 700;
 		
 		/**
 		 * Constructor. 
@@ -49,6 +54,7 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 		public function ScrollViewportTouchContext( strategy:IScrollViewportStrategy )
 		{
 			super( strategy );
+			_point = new Point();
 		}
 		
 		/**
@@ -111,7 +117,11 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 		{
 			addTouchHandlers();
 			// Tell the strategy to start.
-			_strategy.start( new Point( evt.stageX, evt.stageY ) );
+			_point.x = evt.stageX;
+			_point.y = evt.stageY;
+			_strategy.start( _point );
+			
+			_startTime = getTimer();
 		}
 		
 		/**
@@ -122,7 +132,9 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 		 */
 		protected function handleTouchMove( evt:TouchEvent ):void
 		{
-			_strategy.move( new Point( evt.stageX, evt.stageY ) );
+			_point.x = evt.stageX;
+			_point.y = evt.stageY;
+			_strategy.move( _point );
 		}
 		
 		/**
@@ -133,8 +145,15 @@ package com.custardbelly.as3flobile.air.controls.viewport.context
 		 */
 		protected function handleTouchEnd( evt:TouchEvent ):void
 		{
+			var withinTapThreshold:Boolean = ( getTimer() - _startTime <= _tapThreshold ); 
 			removeTouchHandlers();
-			_strategy.end( new Point( evt.stageX, evt.stageY ) );
+			
+			if( !withinTapThreshold )
+			{
+				_point.x = evt.stageX;
+				_point.y = evt.stageY;
+			}
+			_strategy.end( _point );
 		}
 		
 		/**
