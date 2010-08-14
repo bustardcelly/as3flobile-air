@@ -18,10 +18,17 @@
     	<path-element>${src.dir}</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/debug</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/enum</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/helper</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/model</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/skin</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/util</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/button</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/core</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/dropdown</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/label</path-element>
+    	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/label/renderer</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/layout</path-element>
     	<path-element>${as3flobile.src.dir}/com/custardbelly/as3flobile/controls/list/renderer</path-element>
